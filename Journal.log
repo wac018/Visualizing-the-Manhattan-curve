@@ -1,0 +1,969 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.12.6)  8 DEC 2024 14:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Journal.tex
+(./Journal.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/share/texmf-dist/tex/latex/amscls/amsart.cls
+Document Class: amsart 2020/05/29 v2.20.6
+\linespacing=\dimen140
+\normalparindent=\dimen141
+\normaltopskip=\skip48
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen142
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count184
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count185
+\leftroot@=\count186
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count187
+\DOTSCASE@=\count188
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count189
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count190
+\dotsspace@=\muskip16
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
+\tag@help=\toks18
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
+\andhelp@=\toks19
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 397
+.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\copyins=\insert199
+\abstractbox=\box53
+\listisep=\skip52
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count266
+\c@paragraph=\count267
+\c@subparagraph=\count268
+\c@figure=\count269
+\c@table=\count270
+\abovecaptionskip=\skip53
+\belowcaptionskip=\skip54
+\captionindent=\dimen151
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip55
+\thm@postskip=\skip56
+\thm@headsep=\skip57
+\dth@everypar=\toks27
+)
+(./journal_preamble.tex (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/02/07 v24.2 The Babel package
+\babel@savecnt=\count271
+\U@D=\dimen152
+\l@unhyphenated=\language5
+
+(/usr/share/texmf-dist/tex/generic/babel/xebabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count272
+
+(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+))
+(/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count273
+)
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks28
+)
+\csq@reset=\count274
+\csq@gtype=\count275
+\csq@glevel=\count276
+\csq@qlevel=\count277
+\csq@maxlvl=\count278
+\csq@tshold=\count279
+\csq@ltx@everypar=\toks29
+
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count280
+
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count281
+\c@listtotal=\count282
+\c@listcount=\count283
+\c@liststart=\count284
+\c@liststop=\count285
+\c@citecount=\count286
+\c@citetotal=\count287
+\c@multicitecount=\count288
+\c@multicitetotal=\count289
+\c@instcount=\count290
+\c@maxnames=\count291
+\c@minnames=\count292
+\c@maxitems=\count293
+\c@minitems=\count294
+\c@citecounter=\count295
+\c@maxcitecounter=\count296
+\c@savedcitecounter=\count297
+\c@uniquelist=\count298
+\c@uniquename=\count299
+\c@refsection=\count300
+\c@refsegment=\count301
+\c@maxextratitle=\count302
+\c@maxextratitleyear=\count303
+\c@maxextraname=\count304
+\c@maxextradate=\count305
+\c@maxextraalpha=\count306
+\c@abbrvpenalty=\count307
+\c@highnamepenalty=\count308
+\c@lownamepenalty=\count309
+\c@maxparens=\count310
+\c@parenlevel=\count311
+\blx@tempcnta=\count312
+\blx@tempcntb=\count313
+\blx@tempcntc=\count314
+\c@blx@maxsection=\count315
+\blx@maxsegment@0=\count316
+\blx@notetype=\count317
+\blx@parenlevel@text=\count318
+\blx@parenlevel@foot=\count319
+\blx@sectionciteorder@0=\count320
+\blx@sectionciteorderinternal@0=\count321
+\blx@entrysetcounter=\count322
+\blx@biblioinstance=\count323
+\labelnumberwidth=\skip58
+\labelalphawidth=\skip59
+\biblabelsep=\skip60
+\bibitemsep=\skip61
+\bibnamesep=\skip62
+\bibinitsep=\skip63
+\bibparsep=\skip64
+\bibhang=\skip65
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language6
+\c@mincomprange=\count324
+\c@maxcomprange=\count325
+\c@mincompwidth=\count326
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count327
+\c@savedafterword=\count328
+\c@annotator=\count329
+\c@savedannotator=\count330
+\c@author=\count331
+\c@savedauthor=\count332
+\c@bookauthor=\count333
+\c@savedbookauthor=\count334
+\c@commentator=\count335
+\c@savedcommentator=\count336
+\c@editor=\count337
+\c@savededitor=\count338
+\c@editora=\count339
+\c@savededitora=\count340
+\c@editorb=\count341
+\c@savededitorb=\count342
+\c@editorc=\count343
+\c@savededitorc=\count344
+\c@foreword=\count345
+\c@savedforeword=\count346
+\c@holder=\count347
+\c@savedholder=\count348
+\c@introduction=\count349
+\c@savedintroduction=\count350
+\c@namea=\count351
+\c@savednamea=\count352
+\c@nameb=\count353
+\c@savednameb=\count354
+\c@namec=\count355
+\c@savednamec=\count356
+\c@translator=\count357
+\c@savedtranslator=\count358
+\c@shortauthor=\count359
+\c@savedshortauthor=\count360
+\c@shorteditor=\count361
+\c@savedshorteditor=\count362
+\c@labelname=\count363
+\c@savedlabelname=\count364
+\c@institution=\count365
+\c@savedinstitution=\count366
+\c@lista=\count367
+\c@savedlista=\count368
+\c@listb=\count369
+\c@savedlistb=\count370
+\c@listc=\count371
+\c@savedlistc=\count372
+\c@listd=\count373
+\c@savedlistd=\count374
+\c@liste=\count375
+\c@savedliste=\count376
+\c@listf=\count377
+\c@savedlistf=\count378
+\c@location=\count379
+\c@savedlocation=\count380
+\c@organization=\count381
+\c@savedorganization=\count382
+\c@origlocation=\count383
+\c@savedoriglocation=\count384
+\c@origpublisher=\count385
+\c@savedorigpublisher=\count386
+\c@publisher=\count387
+\c@savedpublisher=\count388
+\c@language=\count389
+\c@savedlanguage=\count390
+\c@origlanguage=\count391
+\c@savedoriglanguage=\count392
+\c@pageref=\count393
+\c@savedpageref=\count394
+\shorthandwidth=\skip66
+\shortjournalwidth=\skip67
+\shortserieswidth=\skip68
+\shorttitlewidth=\skip69
+\shortauthorwidth=\skip70
+\shorteditorwidth=\skip71
+\locallabelnumberwidth=\skip72
+\locallabelalphawidth=\skip73
+\localshorthandwidth=\skip74
+\localshortjournalwidth=\skip75
+\localshortserieswidth=\skip76
+\localshorttitlewidth=\skip77
+\localshortauthorwidth=\skip78
+\localshorteditorwidth=\skip79
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count395
+\c@textcitetotal=\count396
+\c@textcitemaxnames=\count397
+\c@biburlbigbreakpenalty=\count398
+\c@biburlbreakpenalty=\count399
+\c@biburlnumpenalty=\count400
+\c@biburlucpenalty=\count401
+\c@biburllcpenalty=\count402
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count403
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count404
+\c@bbx:relatedtotal=\count405
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-02-20 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-02-20 L3 backend support: XeTeX
+\g__graphics_track_int=\count406
+\l__pdf_internal_box=\box54
+\g__pdf_backend_object_int=\count407
+\g__pdf_backend_annotation_int=\count408
+\g__pdf_backend_link_int=\count409
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2024-02-20 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-02-18 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count410
+)
+\@linkdim=\dimen153
+\Hy@linkcounter=\count411
+\Hy@pagecounter=\count412
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count413
+
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4062.
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count414
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen154
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count415
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring ON on input line 6081.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count416
+\c@Item=\count417
+\c@Hfootnote=\count418
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2024-01-20 v7.01h Hyperref driver for XeTeX
+
+(/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box55
+\c@Hy@AnnotLevel=\count419
+\HyField@AnnotCount=\count420
+\Fld@listcount=\count421
+\c@bookmark@seq@number=\count422
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip80
+)
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+)
+(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(/usr/share/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks30
+\SOUL@lasttoken=\toks31
+\SOUL@syllable=\toks32
+\SOUL@cmds=\toks33
+\SOUL@buffer=\toks34
+\SOUL@token=\toks35
+\SOUL@syllgoal=\dimen157
+\SOUL@syllwidth=\dimen158
+\SOUL@charkern=\dimen159
+\SOUL@hyphkern=\dimen160
+\SOUL@dimen=\dimen161
+\SOUL@dimeni=\dimen162
+\SOUL@minus=\count423
+\SOUL@comma=\count424
+\SOUL@apo=\count425
+\SOUL@grave=\count426
+\SOUL@spaceskip=\skip81
+\SOUL@ttwidth=\dimen163
+\SOUL@uldp=\dimen164
+\SOUL@ulht=\dimen165
+)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
+
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count427
+\calc@Bcount=\count428
+\calc@Adimen=\dimen166
+\calc@Bdimen=\dimen167
+\calc@Askip=\skip82
+\calc@Bskip=\skip83
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count429
+\calc@Cskip=\skip84
+)
+(/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count430
+\l_MT_multwidth_dim=\dimen168
+\origjot=\skip85
+\l_MT_shortvdotswithinadjustabove_dim=\dimen169
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen170
+\l_MT_above_intertext_sep=\dimen171
+\l_MT_below_intertext_sep=\dimen172
+\l_MT_above_shortintertext_sep=\dimen173
+\l_MT_below_shortintertext_sep=\dimen174
+\xmathstrut@box=\box56
+\xmathstrut@dim=\dimen175
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen176
+\Gin@req@width=\dimen177
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count431
+\Gm@cntv=\count432
+\c@Gm@tempcnt=\count433
+\Gm@bindingoffset=\dimen178
+\Gm@wd@mp=\dimen179
+\Gm@odd@mp=\dimen180
+\Gm@even@mp=\dimen181
+\Gm@layoutwidth=\dimen182
+\Gm@layoutheight=\dimen183
+\Gm@layouthoffset=\dimen184
+\Gm@layoutvoffset=\dimen185
+\Gm@dimlist=\toks36
+)
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count434
+\mult@box=\box57
+\multicol@leftmargin=\dimen186
+\c@unbalance=\count435
+\c@collectmore=\count436
+\doublecol@number=\count437
+\multicoltolerance=\count438
+\multicolpretolerance=\count439
+\full@width=\dimen187
+\page@free=\dimen188
+\premulticols=\dimen189
+\postmulticols=\dimen190
+\multicolsep=\skip86
+\multicolbaselineskip=\skip87
+\partial@page=\box58
+\last@line=\box59
+\mc@boxedresult=\box60
+\maxbalancingoverflow=\dimen191
+\mult@rightbox=\box61
+\mult@grightbox=\box62
+\mult@firstbox=\box63
+\mult@gfirstbox=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\c@minrows=\count440
+\c@columnbadness=\count441
+\c@finalcolumnbadness=\count442
+\last@try=\dimen192
+\multicolovershoot=\dimen193
+\multicolundershoot=\dimen194
+\mult@nat@firstbox=\box101
+\colbreak@box=\box102
+\mc@col@check@num=\count443
+)
+(/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen195
+\ar@mcellbox=\box103
+\extrarowheight=\dimen196
+\NC@list=\toks37
+\extratabsurround=\skip88
+\backup@length=\skip89
+\ar@cellbox=\box104
+)
+\TX@col@width=\dimen197
+\TX@old@table=\dimen198
+\TX@old@col=\dimen256
+\TX@target=\dimen257
+\TX@delta=\dimen258
+\TX@cols=\count444
+\TX@ftn=\toks38
+)
+(/usr/share/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count445
+\cp@tempcnt=\count446
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+
+(/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip90
+\enit@outerparindent=\dimen259
+\enit@toks=\toks39
+\enit@inbox=\box105
+\enit@count@id=\count447
+\enitdp@description=\count448
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count449
+\lst@gtempboxa=\box106
+\lst@token=\toks40
+\lst@length=\count450
+\lst@currlwidth=\dimen260
+\lst@column=\count451
+\lst@pos=\count452
+\lst@lostspace=\dimen261
+\lst@width=\dimen262
+\lst@newlines=\count453
+\lst@lineno=\count454
+\lst@maxwidth=\dimen263
+
+(/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+\c@lstnumber=\count455
+\lst@skipnumbers=\count456
+\lst@framebox=\box107
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/02/21 1.10 listings configuration
+))
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
+\c@example=\count457
+\c@remark=\count458
+\c@eqlisti=\count459
+\c@eqlistii=\count460
+\enitdp@eqlist=\count461
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+ (./Journal.aux)
+\openout1 = `Journal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+5.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `Journal.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Journal.bbl' found.
+ (./Journal.bbl)
+Package biblatex Info: Reference section=0 on input line 15.
+Package biblatex Info: Reference segment=0 on input line 15.
+Package hyperref Info: Link coloring ON on input line 15.
+
+(./Journal.out) (./Journal.out)
+\@outlinefile=\write4
+\openout4 = `Journal.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-22.0pt
+* \headheight=8.0pt
+* \headsep=14.0pt
+* \topskip=10.0pt
+* \footskip=12.0pt
+* \marginparwidth=90.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=7.0pt plus 11.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count462
+(./Journal.toc)
+\tf@toc=\write5
+\openout5 = `Journal.toc'.
+
+File: Journal_Figures/g2_torus.jpg Graphic file (type bmp)
+<Journal_Figures/g2_torus.jpg>
+ [1]
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+
+ []
+
+[2]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+20.
+ (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [3] (./Journal.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+Package rerunfilecheck Info: File `Journal.out' has not changed.
+(rerunfilecheck)             Checksum: 501A8C1B870EACFAD30731DC09FEA0E5;1055.
+Package logreq Info: Writing requests to 'Journal.run.xml'.
+\openout1 = `Journal.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22602 strings out of 476772
+ 382331 string characters out of 5803394
+ 1929839 words of memory out of 5000000
+ 44197 multiletter control sequences out of 15000+600000
+ 592935 words of font info for 69 fonts, out of 8000000 for 9000
+ 175 hyphenation exceptions out of 8191
+ 71i,6n,84p,1132b,4944s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on Journal.pdf (3 pages).
