@@ -1,0 +1,65 @@
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[sortcites=true, sorting=nyt, backend=biber]{biblatex}
+
+\usepackage[colorlinks=true,
+pdfstartview=FitV, linkcolor=blue, citecolor=olive,
+urlcolor=cyan]{hyperref}
+\usepackage{xcolor, soul} %Package to insert links, citations, etc.
+
+\usepackage{amsmath, amsthm, amssymb, mathtools}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{changepage}
+\usepackage[T1]{fontenc}
+
+\usepackage{enumitem}
+\usepackage{listings} % Used for including code snippets
+
+\geometry{letterpaper, portrait, margin=1in}
+
+\theoremstyle{definition}
+\newtheorem*{example*}{Example}
+\newtheorem{example}{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newlist{eqlist}{enumerate}{2}
+\setlist[eqlist]{label=(\roman*), before=\raggedright}
+
+% Nice way to make notes for myself
+\newcommand{\William}[1]{\textcolor{red}{[William] #1}}
+
+% Some nice math macros
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand*\diff{\mathop{}\!\mathrm{d}} % Changes the font of the differential d when writing dx or similar
+\renewcommand{\st}{\colon} % renews the st command that is usually provided by soul to strike through
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\wrt}{\text{w.r.t. }}
+
+\frenchspacing
+
+\newenvironment{summary}{
+	\hfill \break 
+	\begin{center}
+		\textbf{Summary:}
+	\end{center}
+	\begin{adjustwidth}{0.5in}{0.5in}
+		
+	
+}{
+\end{adjustwidth}
+\bigskip
+}
+
+
+
+
+
