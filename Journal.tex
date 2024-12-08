@@ -1,5 +1,11 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass{amsart}
+
+% I  moved all the document specific preamble stuff here so the top of this document doesn't get messy
+\input{journal_preamble.tex} 
+
+% Resource Locations
+\graphicspath{{Journal_Figures}}
+\bibliography{meeting_journal_references.bib}
 
 \title{Visualizing the Manhattan curve --- Journal}
 \author{William Clampitt and Giuseppe Martone}
@@ -8,17 +14,109 @@
 
 \begin{document}
 
-\maketitle
 \begin{abstract}
     This notebook will serve as a research journal for William's master thesis project
 \end{abstract}
 
-\section{11.19.2024}
+\maketitle
+\tableofcontents
+
+
+\section{November 19, 2024}
 \subsection{Meeting notes}
+\subsubsection{Counting Problems}
+	Gauss estimated that the distribution of prime numbers was 
+	\begin{equation*}
+		\# \set{p \in P \st p \leq T} \sim \frac{T}{\ln T} 
+	\end{equation*}
+	
+	These type of counting problems are common in fields such as Geometry, Topology, and Dynamical Systems. 
+	
+	Typically, in this context
+	\begin{equation*}
+		\# \set{ a \in A \st a \leq T} \sim \text{ exponential in } T
+	\end{equation*}
+	
+	\subsubsection*{Topoligical Entropy}
+	Typically, topological entropy is calcualted with the below formula:
+	\begin{equation*}
+		h_{\text{top}}(A) = \lim_{T \to \infty} \frac{1}{T} \ln \# \set{a \in A \st a \leq T}
+	\end{equation*}
+	
+	\begin{example*}
+		\begin{equation*}
+			h_{\text{top}}(\N) = 0
+		\end{equation*}
+	\end{example*}
+	
+	\subsubsection*{Hilbert Metric First Glance}
+	
+	\begin{figure}[h]
+		\includegraphics[width=0.5\linewidth]{g2_torus}
+		\label{fig:g2_torus}
+		\caption{Hyperbolic structure (locally looks like $\mathbb{H}^2$)}
+	\end{figure}
+	
+	\begin{enumerate}
+		\item You need a hyperbolic structure on $S$, call it  $p$.
+		\item The set of closed loops (discrete)
+		\begin{itemize}
+			\item Each closed loop has a length \wrt the hyperbolic structure (number $> 0$)
+		\end{itemize}
+	\end{enumerate}
+	
+	We will denote the length of the curve $c$ as $l_p(c)$ \wrt $p \in \R$ where $p > 0$.
+	\begin{equation*}
+		\# \set{c \st l_p(c) < T} \sim \frac{e^T}{T}
+	\end{equation*}
+	\begin{remark}
+		This was shown by Huber Marpulis \William{Is this person the same as Grigory Margulis? Maybe I wrote the name down wrong when I was taking notes.}
+	\end{remark}
+	
+	\subsubsection*{Origin of Program Matrices}
+	
+	The three matrices in the first program are representing a relfection accross the three distinct edges of the triangles that are formed when we stretch the holes of our pants to the boundary of our hyperbolic space. 
+	
+	
 \subsection{Post-meeting notes}
 
-\section{12.3.2024}
+\subsubsection{Counting Problems}
+
+\begin{example*}
+	The distribution of prime numbers. In 1792 Gauss proposed that
+	\begin{equation*}
+		\pi(n) \sim \frac{n}{\ln n}
+	\end{equation*}
+	
+	but was later refined to 
+	\begin{equation*}
+		\pi(n) \sim \text{Li}(n),
+	\end{equation*}
+	
+	where
+	\begin{equation*}
+		\text{Li}(n) = \int_{2}^{n} \frac{\diff x}{\ln x}
+	\end{equation*}\cite{wolfram_prime_num_theorem}
+\end{example*}
+
+
+\section{December 3, 2024}
 \subsection{Meeting notes}
+
+\begin{summary}
+	In this meeting we discussed the problems that I encountered with my program. In summary, my program is using up too much system memory of the computer. This results in the program crashing which prematurely halts the calculation of the words of our alphabet. Because I was not incrementally storing the already computed matrices, the program would not yeild any results if it crashed. 
+\end{summary}
+
+
+
+\subsubsection*{Potential Solutions to Problem}
+I think one way that might be good to reduce the system memory useage of my program would be to store the words of length $n$ in a file, then use those words to generate the words of length $n + 1$. The words of length $n$ would then be unloaded from system memory. After the words of length $n$ are unloaded, we can use the words of length $n + 1$ to calculated the words of length $n + 2$ and so on. 
+
 \subsection{Post-meeting notes}
+
+I am attempting to rewrite my current program using Octave while also implimenting my idea about iteratively saving the words of length $n$ each time so that I do not have to store the entirety of the list in system memory at one time. After this is done, the list will need to be sifted through to remove duplicates matrices.  
+
+\newpage
+\printbibliography
 
 \end{document}
