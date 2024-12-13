@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.12.6)  8 DEC 2024 14:13
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.12.6)  13 DEC 2024 03:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,6 +825,7 @@ Package: listings 2024/02/21 1.10 (Carsten Heinz)
 \c@eqlisti=\count459
 \c@eqlistii=\count460
 \enitdp@eqlist=\count461
+\enitdp@todolist=\count462
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -929,7 +930,7 @@ Package hyperref Info: Link coloring ON on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count462
+\c@lstlisting=\count463
 (./Journal.toc)
 \tf@toc=\write5
 \openout5 = `Journal.toc'.
@@ -941,29 +942,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--106
 
  []
 
-[2]
+[2] [3]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-20.
+35.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3] (./Journal.aux)
+) [4] (./Journal.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `Journal.out' has not changed.
-(rerunfilecheck)             Checksum: 501A8C1B870EACFAD30731DC09FEA0E5;1055.
+
+
+Package rerunfilecheck Warning: File `Journal.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Journal.out':
+(rerunfilecheck)             Before: 9F5BAE666DF3E410237A9F6D103AA7E6;1055
+(rerunfilecheck)             After:  501A8C1B870EACFAD30731DC09FEA0E5;1055.
 Package logreq Info: Writing requests to 'Journal.run.xml'.
 \openout1 = `Journal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22602 strings out of 476772
- 382331 string characters out of 5803394
+ 22613 strings out of 476772
+ 382508 string characters out of 5803394
  1929839 words of memory out of 5000000
- 44197 multiletter control sequences out of 15000+600000
+ 44208 multiletter control sequences out of 15000+600000
  592935 words of font info for 69 fonts, out of 8000000 for 9000
  175 hyphenation exceptions out of 8191
  71i,6n,84p,1132b,4944s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Journal.pdf (3 pages).
+Output written on Journal.pdf (4 pages).
