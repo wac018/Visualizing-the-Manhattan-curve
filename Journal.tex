@@ -114,7 +114,22 @@ I think one way that might be good to reduce the system memory useage of my prog
 
 \subsection{Post-meeting notes}
 
-I am attempting to rewrite my current program using Octave while also implimenting my idea about iteratively saving the words of length $n$ each time so that I do not have to store the entirety of the list in system memory at one time. After this is done, the list will need to be sifted through to remove duplicates matrices.  
+I am attempting to rewrite my current program using Octave while also implimenting my idea about iteratively saving the words of length $n$ each time so that I do not have to store the entirety of the list in system memory at one time. After this is done, the list will need to be sifted through to remove duplicates matrices. 
+
+So far it seems like the success of this project would be greatly benifited by reducing the number of matrix multiplications a program would have to do. Currently before any duplicates are removed, generating all of the words up to length $n$ creates $3^{\frac{n(n+1)}{2}}$ matrices. This takes a very long time to compute. My theory though is that this creates a lot of duplicates, especially when we are relitavely close to the origin of our tiling. It would be ideal if we could recognize the conditions that would create a duplicate matrix before having to preform the computation.
+
+From what I understand of what Dr. Martone explained to me in one of our previous meetings is that these matrices represent a reflection across one of the edges of our triangles that are formed by our pairs of pants. I am assuming that the tiling process would begin with a single triangle and then continuously reflect across every edge of each triangle that was formed during this process. 
+
+I am pretty sure that each word we create is representative of a sort of path formed by the reflections about each edge of these triangles. Many of these paths will end up leading to the same place though. \William{I will provide an illustration of my idea here later.} If we could find a more efficient way of tiling the space that minimizes the number of paths that lead to the same place in our tiling, then the computation would hopefully become a lot less resource intensive, which would make it more practical. 
+
+I suspect that this could be done by using some sort of graph to map out triangular grid that is formed by our tiling. We could hopefully calculate the size of our graph by finding the maximum \inquote{radius} that can be reached by words of length $n$, and then using some algorithm to find the shortest amount of reflections that would be required to reach that tile. This would probably be a good place to impliment something like Dijkstra's algorithm which finds the shortest path between nodes in a graph. All of this should be able to be done much more efficiently that just brute forcing thousands of matrix multitplications and then sorting out the duplicates. 
+
+\textbf{TODO List:}
+\begin{todolist}
+	\item Make sure that I am thinking about these matrices in the right way.
+	\item If I am thinking about this the right way, figure out how we could efficiently encode this tiling as a graph. 
+	\item I would possibly need to prove that two words that lead to the same triangle actually end up being the same matrix. 
+\end{todolist}
 
 \newpage
 \printbibliography
