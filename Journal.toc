@@ -11,4 +11,7 @@
 \contentsline {subsection}{\tocsubsection {}{2.1}{Meeting notes}}{2}{subsection.2.1}%
 \contentsline {subsubsection}{\tocsubsubsection {}{}{Potential Solutions to Problem}}{2}{section*.5}%
 \contentsline {subsection}{\tocsubsection {}{2.2}{Post-meeting notes}}{2}{subsection.2.2}%
+\contentsline {section}{\tocsection {}{3}{December 14, 2024}}{3}{section.3}%
+\contentsline {subsection}{\tocsubsection {}{3.1}{Meeting Notes}}{3}{subsection.3.1}%
+\contentsline {subsection}{\tocsubsection {}{3.2}{Post-meeting Notes}}{3}{subsection.3.2}%
 \contentsline {section}{\tocsection {}{}{References}}{4}{section*.6}%

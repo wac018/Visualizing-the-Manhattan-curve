@@ -131,6 +131,35 @@ I suspect that this could be done by using some sort of graph to map out triangu
 	\item I would possibly need to prove that two words that lead to the same triangle actually end up being the same matrix. 
 \end{todolist}
 
+\section{December 14, 2024}
+\subsection{Meeting Notes}
+
+Dr. Martone seems to think that my graph idea is interesting and it worth looking into further. He was concerned about my graph needing to find the shortest Hilbert distance between nodes; not the shortest number of reflections between nodes. My initial though was that I could weight the edges of he graph in such a way that they mimicked the Hilbert distance. This may still be possible, but it would require more thought to get working properly. 
+
+\subsection{Post-meeting Notes}
+
+I have spent some time working on this program. My first step is to find a way of encoding the graph of words up to a maximum length of $N$ as an adjacency matrix that the computer can work with. I made some observations about the number of triangles that are added to the tiling when going from a max of $N$ words to a max of $N + 1$ words. 
+
+\begin{center}
+	\bigskip
+	\begin{tabular}{c | c | c}
+		length of words & number of nodes added & sum total of nodes\\
+		\hline
+		$0$ & $1$ & $1$ \\
+		$1$ & $3$ & $4$ \\
+		$2$ & $6$ & $10$ \\
+		$3$ & $9$ & $19$ \\
+		$4$ & $12$ & $31$
+	\end{tabular}
+\end{center}
+
+This can be extrapolated into the formula 
+\begin{equation*}
+	\text{\# Nodes}(N) = 1 + \sum_{n = 1}^{N} 3n
+\end{equation*}
+
+From the work that I have done so far, I think that the most difficult challenge that I am facing right now is encoding the tiling that we have as an adjacency matrix that the computer can work with. Once we have that, there are many implementations of Dijkstra's algorithm that can either be borrowed or modified to fit our needs. I am currently doing some experimentation with algorithms that will generate the adjacency matrix for a graph that represents a tiling of words up to length $N$. 
+
 \newpage
 \printbibliography
 
