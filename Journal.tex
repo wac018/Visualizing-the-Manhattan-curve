@@ -155,10 +155,68 @@ I have spent some time working on this program. My first step is to find a way o
 
 This can be extrapolated into the formula 
 \begin{equation*}
-	\text{\# Nodes}(N) = 1 + \sum_{n = 1}^{N} 3n
+	\text{\# Nodes}(N) = 1 + \sum_{n = 1}^{N} 3n = 1 + \frac{3N (N + 1)}{2}
 \end{equation*}
 
 From the work that I have done so far, I think that the most difficult challenge that I am facing right now is encoding the tiling that we have as an adjacency matrix that the computer can work with. Once we have that, there are many implementations of Dijkstra's algorithm that can either be borrowed or modified to fit our needs. I am currently doing some experimentation with algorithms that will generate the adjacency matrix for a graph that represents a tiling of words up to length $N$. 
+
+
+
+\section{January 9, 2025}
+\section{Meeting Notes}
+During this meeting we discussed potential ways of weighting the graph that we worked on last time. After some thinking, Giuseppe thought of an idea to use the cross ratio to find weights for our graph. I have a drawing of the setup we came up with in Figure \ref{fig:graph_weights}.
+
+\begin{figure}[h]
+	\includegraphics[width=0.75\linewidth]{graph_weighting_cross_ratio}
+	\caption{Visualization of method of producing graph weights}
+	\label{fig:graph_weights}
+\end{figure}
+
+We note that $e_1, e_2, e_3$ are the standard basis vectors in $\R^3$.
+
+\subsection*{The General Case for Distance}
+
+Since $v_2$ is the plane spanned by $v_1$ and $v_4$, $v_2 = a_1 v_1 + a_4 v_4$.
+
+Similarly, since $v_3$ is the plane spanned by $v_1$ and $v_4$, $v_3 = b_1 v_1 + b_4 v_4$.
+
+\begin{figure}[h]
+	\begin{tikzpicture}[
+		dot/.style={circle, fill, minimum size = #1,
+			inner sep=0pt, outer sep=0pt},
+		dot/.default = 6pt
+		]
+		\node[dot, label=below:{$[v_1]$}] (v1) at (-5,0) {};
+		\node[dot, label=below:{$[v_2]$}] (v2) at (-2,0) {};
+		\node[dot, label=below:{$[v_3]$}] (v3) at (2,0) {};
+		\node[dot, label=below:{$[v_4]$}] (v4) at (5,0) {};
+		
+		\draw (v1) -- (v4);
+	\end{tikzpicture}
+	\caption{General setup for distance.}
+	\label{fig:general_distance_setup}
+\end{figure}
+
+The distance between $[v_2]$ and $[v_3]$ would be given by
+\begin{equation*}
+	d([v_2], [v_3]) = \ln \left( \text{Cr}\left[ v_1, v_2, v_3, v_4\right] \right)
+\end{equation*}
+
+The cross ratio would be given by
+\begin{equation*}
+	\text{Cr}\left[ v_1, v_2, v_3, v_4 \right] = \frac{b_4}{a_4} \cdot \frac{a_1}{b_1}
+\end{equation*}
+
+\textbf{Claims:}
+\begin{itemize}
+	\item $\text{Cr}\left[ v_1, v_2, v_3, v_4 \right] > 1$
+	\item It doesn't depend on the choice of coordinates. In other words, if we rescale $v_1, v_2, v_3, v_4$ independently, the cross ratio does not change.
+	\item For any invertible $3\times3$ matrix $A$, we have $\text{Cr}\left[ Av_1, Av_2, Av_3, Av_4 \right] = \text{Cr}\left[ v_1, v_2, v_3, v_4 \right].$
+\end{itemize}
+
+\section{January 14, 2025}
+\subsection{Meeting Notes}
+I  had some troub
 
 \newpage
 \printbibliography

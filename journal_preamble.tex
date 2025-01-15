@@ -14,11 +14,14 @@ urlcolor=cyan]{hyperref}
 \usepackage{tabularx}
 \usepackage{changepage}
 \usepackage[T1]{fontenc}
+\usepackage{tikz}
 
 \usepackage{enumitem}
 \usepackage{listings} % Used for including code snippets
 
 \geometry{letterpaper, portrait, margin=1in}
+
+\graphicspath{{Journal_Figures}}
 
 \theoremstyle{definition}
 \newtheorem*{example*}{Example}
@@ -63,6 +66,14 @@ urlcolor=cyan]{hyperref}
 }{
 \end{adjustwidth}
 \bigskip
+}
+
+\usetikzlibrary{intersections}
+
+\tikzset{
+	convexset/.style = {line width = 0.75 pt, fill = white},
+	ext/.style = {circle, inner sep=0pt, minimum size=2pt, fill=black},
+	segment/.style = {line width = 0.75 pt}
 }
 
 
