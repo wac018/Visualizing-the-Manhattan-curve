@@ -23,7 +23,7 @@ old_adj_matrix = [0];
 edge_weight = 1;
 
 
-for i = [2:N]
+for i = [2:N-1]
 	B = make_B(old_adj_matrix, i, edge_weight);
 	C = make_C(old_adj_matrix, i, edge_weight);
 	adj_matrix = [[old_adj_matrix B]; [B' C]];
@@ -39,7 +39,7 @@ function B = make_B(M, N, weight)
 	B_rows = M_rows;
 	B_cols = N^2 - M_cols;
 
-	B = zeros((N-1)^2, B_cols)
+	B_top = zeros((N-2)^2, B_cols);
 
 	alt_ones_and_zeros = [];
 	for i = [1:B_cols - 2]
@@ -49,9 +49,9 @@ function B = make_B(M, N, weight)
 
 	inner_sq_matrix = diag(alt_ones_and_zeros);
 	padding_zeros = zeros(rows(inner_sq_matrix), 1);
-	inner_sq_matrix = [padding_zeros inner_sq_matrix padding_zeros]
+	inner_sq_matrix = [padding_zeros inner_sq_matrix padding_zeros];
 
-	B = [B; inner_sq_matrix];
+	B = [B_top; inner_sq_matrix];
 
 endfunction
 
