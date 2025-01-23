@@ -308,3 +308,6 @@ TSWLatexianTemp*
 
 # spreadsheet files
 *.csv
+
+# Octave workspace
+octave-workspace
