@@ -1,66 +1,56 @@
 function adj_matrix = make_adjacency_matrix(N)
 
-% This code makes the adjacency matrix that Giuseppe and I talked about on January 3, 2025
+adj_matrix = [0];
 
-#{
-We are generating an adjacency matrix for a tiling of triangles. Starting with a single
-triangle, the next row down will have 3 triangles (two more than the previous line). The first row of triangles
-(the row with the single triangle) will be labeled as row_1 and the second row as row_2, and so on.
+if N <= 1
+	return;
+endif
 
-For N numbers of rows, there will be N^2 total triangles in our tiling.
-
-Each matrix can be split into four distinct parts
-A | B
---|---
-B'| C
-
-
-#}
-
-old_adj_matrix = [0];
-%old_adj_matrix = [0 0 1 0; 0 0 1 0; 1 1 0 1; 0 0 1 0];
-
-edge_weight = 1;
-
-
-for i = [2:N-1]
-	B = make_B(old_adj_matrix, i, edge_weight);
-	C = make_C(old_adj_matrix, i, edge_weight);
-	adj_matrix = [[old_adj_matrix B]; [B' C]];
-	old_adj_matrix = adj_matrix;
+% Creates a vector with the total number of nodes after generating a tree with depth N
+N_k = [[1], zeros(1, N-1)];
+for k = [2:N]
+	N_k(k) = N_k(k-1) + 2^(k - 1);
 endfor
 
-endfunction
+% Makes a blank adjacency matrix and then connects the nodes with 1's
+adj_matrix = zeros(N_k(end));
 
+col = 2;
+for row = [1:N_k(end-1)]
+	adj_matrix(row, col) = 1;
+	adj_matrix(row, col+1) = 1;
+	col = col + 2;
+endfor
 
-function B = make_B(M, N, weight)
-	M_rows = rows(M);
-	M_cols = columns(M);
-	B_rows = M_rows;
-	B_cols = N^2 - M_cols;
-
-	B_top = zeros((N-2)^2, B_cols);
-
-	alt_ones_and_zeros = [];
-	for i = [1:B_cols - 2]
-		entry = mod(i, 2);
-		alt_ones_and_zeros = [alt_ones_and_zeros [entry]];
-	endfor
-
-	inner_sq_matrix = diag(alt_ones_and_zeros);
-	padding_zeros = zeros(rows(inner_sq_matrix), 1);
-	inner_sq_matrix = [padding_zeros inner_sq_matrix padding_zeros];
-
-	B = [B_top; inner_sq_matrix];
+adj_matrix = encode_reflections(adj_matrix, N_k, 1);
+adj_matrix = adj_matrix + adj_matrix';
 
 endfunction
 
+function adj_matrix = encode_reflections(A, N_k, starting_reflection)
+	patterns = cell(3, 2);
+	patterns(1,:) = {[3, 2, 1], [1, 2, 3]};
 
-function C = make_C(M,N, weight)
-	size_C = N^2 - rows(M);
-	C = zeros(size_C, size_C);
-	for j = [2:size_C]
-		C(j-1,j) = weight;
+	for i = [1:N_k(end - 1)]
+		col_count = 0;
+		for j = [1:columns(A)]
+			if col_count >= 2
+				break;
+			endif
+			if A(i,j) == 1
+				switch(mod(j, 6))
+					case {0, 2}
+						A(i,j) = 3;
+					case {3, 5}
+						A(i,j) = 2;
+					case {1, 4}
+						A(i,j) = 1;
+				endswitch
+				col_count = col_count + 1;
+			endif
+		endfor
+
 	endfor
-	C = C + C';
+
+	adj_matrix = A;
 endfunction
