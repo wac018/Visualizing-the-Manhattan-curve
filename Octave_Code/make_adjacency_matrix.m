@@ -22,8 +22,12 @@ for row = [1:N_k(end-1)]
 	col = col + 2;
 endfor
 
+% Encodes the reflections into the matrix using 1, 2, and 3 to represent R1, R2, and R3, respectively.
 adj_matrix = encode_reflections(adj_matrix, N_k, 1);
 adj_matrix = adj_matrix + adj_matrix';
+
+% Replaces 0's with inf
+adj_matrix(adj_matrix == 0) = inf;
 
 endfunction
 
