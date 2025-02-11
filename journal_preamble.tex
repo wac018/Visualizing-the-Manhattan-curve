@@ -15,6 +15,7 @@ urlcolor=cyan]{hyperref}
 \usepackage{changepage}
 \usepackage[T1]{fontenc}
 \usepackage{tikz}
+\usepackage{listings} % Used for inserting code snippets
 
 \usepackage{enumitem}
 \usepackage{listings} % Used for including code snippets
@@ -22,6 +23,17 @@ urlcolor=cyan]{hyperref}
 \geometry{letterpaper, portrait, margin=1in}
 
 \graphicspath{{Journal_Figures}}
+
+% This controls how the code snippets are typset
+\lstset{
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}}\space
+}
+
+\lstset{language=Octave}
 
 \theoremstyle{definition}
 \newtheorem*{example*}{Example}
