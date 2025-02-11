@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.25)  24 JAN 2025 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.25)  11 FEB 2025 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,42 +1009,46 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip90
-\enit@outerparindent=\dimen308
-\enit@toks=\toks51
-\enit@inbox=\box115
-\enit@count@id=\count466
-\enitdp@description=\count467
-)
-(/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count468
-\lst@gtempboxa=\box116
-\lst@token=\toks52
-\lst@length=\count469
-\lst@currlwidth=\dimen309
-\lst@column=\count470
-\lst@pos=\count471
-\lst@lostspace=\dimen310
-\lst@width=\dimen311
-\lst@newlines=\count472
-\lst@lineno=\count473
-\lst@maxwidth=\dimen312
+))) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count466
+\lst@gtempboxa=\box115
+\lst@token=\toks51
+\lst@length=\count467
+\lst@currlwidth=\dimen308
+\lst@column=\count468
+\lst@pos=\count469
+\lst@lostspace=\dimen309
+\lst@width=\dimen310
+\lst@newlines=\count470
+\lst@lineno=\count471
+\lst@maxwidth=\dimen311
 
 (/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count474
-\lst@skipnumbers=\count475
-\lst@framebox=\box117
+\c@lstnumber=\count472
+\lst@skipnumbers=\count473
+\lst@framebox=\box116
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip90
+\enit@outerparindent=\dimen312
+\enit@toks=\toks52
+\enit@inbox=\box117
+\enit@count@id=\count474
+\enitdp@description=\count475
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
 \c@example=\count476
 \c@remark=\count477
 \c@eqlisti=\count478
@@ -1107,12 +1111,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `Journal.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Journal.bbl' found.
- (./Journal.bbl)
+Package biblatex Info: ... file 'Journal.bbl' not found.
+
+No file Journal.bbl.
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
 Package hyperref Info: Link coloring ON on input line 20.
-
 (./Journal.out) (./Journal.out)
 \@outlinefile=\write5
 \openout5 = `Journal.out'.
@@ -1187,43 +1191,71 @@ File: Journal_Figures/g2_torus.jpg Graphic file (type jpg)
 Package pdftex.def Info: Journal_Figures/g2_torus.jpg  used on input line 60.
 (pdftex.def)             Requested size: 234.8775pt x 85.51414pt.
 
+
+LaTeX Warning: Citation 'wolfram_prime_num_theorem' on page 2 undefined on inpu
+t line 104.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 111--111
 
  []
 
 [2 <./Journal_Figures/g2_torus.jpg>] [3]
-<Journal_Figures/graph_weighting_cross_ratio.png, id=166, 188.20313pt x 134.094
+<Journal_Figures/graph_weighting_cross_ratio.png, id=164, 188.20313pt x 134.094
 73pt>
 File: Journal_Figures/graph_weighting_cross_ratio.png Graphic file (type png)
 <use Journal_Figures/graph_weighting_cross_ratio.png>
 Package pdftex.def Info: Journal_Figures/graph_weighting_cross_ratio.png  used 
 on input line 175.
 (pdftex.def)             Requested size: 352.31625pt x 251.04433pt.
- [4 <./Journal_Figures/graph_weighting_cross_ratio.png>] [5]
+ [4 <./Journal_Figures/graph_weighting_cross_ratio.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 251.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-40.
+51.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [6]
+)
+(./Octave_Code/make_adjacency_matrix.m
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
+ [5] [6])
+
+LaTeX Warning: Citation 'alexey_dijkstra_alg' on page 7 undefined on input line
+ 253.
+
+(./Octave_Code/find_entropy.m) [7]
+
+LaTeX Warning: Empty bibliography on input line 261.
+
 (./Journal.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Journal.out' has not changed.
-(rerunfilecheck)             Checksum: 3A3B216CBB8B3347884DA7C79745BA25;3466.
+(rerunfilecheck)             Checksum: 1948D597F13E69B9FA0A23FF885FCD41;3531.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Journal
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Journal.run.xml'.
 \openout1 = `Journal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33578 strings out of 476076
- 618473 string characters out of 5793774
- 1942187 words of memory out of 5000000
- 55005 multiletter control sequences out of 15000+600000
- 569738 words of font info for 66 fonts, out of 8000000 for 9000
+ 34560 strings out of 476076
+ 628771 string characters out of 5793774
+ 2253187 words of memory out of 5000000
+ 55880 multiletter control sequences out of 15000+600000
+ 570053 words of font info for 67 fonts, out of 8000000 for 9000
  175 hyphenation exceptions out of 8191
- 89i,8n,90p,1132b,1824s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,8n,90p,1132b,2660s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1236,15 +1268,16 @@ mbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf-dist
 /fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-frm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sftt1000.pfb>
-Output written on Journal.pdf (6 pages, 446553 bytes).
+blic/cm-super/sfit1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+frm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></u
+sr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sftt1000.pfb>
+Output written on Journal.pdf (7 pages, 492122 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 350 compressed objects within 4 object streams
+ 141 named destinations out of 1000 (max. 500000)
  199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

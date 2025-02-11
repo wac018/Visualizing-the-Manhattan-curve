@@ -5,7 +5,7 @@
 
 % Resource Locations
 \graphicspath{{Journal_Figures}}
-\bibliography{meeting_journal_references.bib}
+\addbibresource{Journal.bib}
 
 
 \def\WC #1{\footnote{\color{blue} W: #1}}
@@ -235,6 +235,27 @@ During this meeting, we discovered that our method of tiling was not accurate to
 \subsection{Meeting Notes}
 
 \subsection{Post-Meeting Notes}
+
+\section{Program Explanation}
+
+After we discovered that our tiling was more reminiscent of a tree structure, I rewrote the code to generate an adjacency matrix that reflects this tree. At its current stage, my adjacency matrix only represents one of the main branches of the tree and generates $N$ layers of nodes.
+
+\begin{figure}
+	\hl{Insert picture of tree here}
+	\label{fig:tree_structure}
+	\caption{Tree structure created by the reflections of starting triangle.}
+\end{figure}
+
+After the adjacency matrix is generated, the program encodes the edges of the tree with the reflections that they represent. A $1$ is used for $R_1$, a $2$ for $R_2$, and a $3$ for $R_3$. 
+
+\lstinputlisting[label=lst:make_adj_matrix, caption={Code that generates the adjacency matrix for the tree.}]{Octave_Code/make_adjacency_matrix.m}
+
+I then use Dijkstra's algorithm to find the the path between the root node and any other node in branches below it. My current implementation uses redundant calculations and could be further optimized. The implementation I used for Dijkstra's algorithm can be found at \hl{Fix citation here}\cite{alexey_dijkstra_alg}.
+
+
+ After it generates a path from the root node to another node in the tree, my program multiplies the matrices together that would form the path from the root node to the node that we are currently working with. Once this is done, we find the singular values of the matrix and assign the ``length" of that matrix to be $l = \ln\left(\frac{\sigma_3}{\sigma_1}\right)$. The program then looks at the value of $l$ and adds a tally to a list that keeps track of how many of these $l$ values fall in the interval $[n, n+1)$.
+ 
+ \lstinputlisting[label=lst:find_path, caption={Script that combines all of the steps together.}]{Octave_Code/find_entropy.m}
 
 \newpage
 \printbibliography

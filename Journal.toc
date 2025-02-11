@@ -26,4 +26,4 @@
 \contentsline {section}{\tocsection {}{8}{January 24, 2025}}{5}{section.8}%
 \contentsline {subsection}{\tocsubsection {}{8.1}{Meeting Notes}}{5}{subsection.8.1}%
 \contentsline {subsection}{\tocsubsection {}{8.2}{Post-Meeting Notes}}{5}{subsection.8.2}%
-\contentsline {section}{\tocsection {}{}{References}}{6}{section*.7}%
+\contentsline {section}{\tocsection {}{9}{Program Explanation}}{5}{section.9}%
