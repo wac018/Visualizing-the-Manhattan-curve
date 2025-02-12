@@ -250,7 +250,7 @@ After the adjacency matrix is generated, the program encodes the edges of the tr
 
 \lstinputlisting[label=lst:make_adj_matrix, caption={Code that generates the adjacency matrix for the tree.}]{Octave_Code/make_adjacency_matrix.m}
 
-I then use Dijkstra's algorithm to find the the path between the root node and any other node in branches below it. My current implementation uses redundant calculations and could be further optimized. The implementation I used for Dijkstra's algorithm can be found at \hl{Fix citation here}\cite{alexey_dijkstra_alg}.
+I then use Dijkstra's algorithm to find the the path between the root node and any other node in branches below it. My current implementation uses redundant calculations and could be further optimized. The implementation I used for Dijkstra's algorithm can be found at \hl{Fix citation here (Works in overleaf but not texstudio)}\cite{alexey_dijkstra_alg}.
 
 
  After it generates a path from the root node to another node in the tree, my program multiplies the matrices together that would form the path from the root node to the node that we are currently working with. Once this is done, we find the singular values of the matrix and assign the ``length" of that matrix to be $l = \ln\left(\frac{\sigma_3}{\sigma_1}\right)$. The program then looks at the value of $l$ and adds a tally to a list that keeps track of how many of these $l$ values fall in the interval $[n, n+1)$.
