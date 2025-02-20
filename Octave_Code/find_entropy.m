@@ -1,34 +1,22 @@
-
-N = 10;
 t = 1;
+N = 10;
 
+R1 = [[-1, 0, 0]; [2*t, 1, 0]; [2/t, 0, 1]];
 
-disp("Generating adjacency matrix")
-adj_matrix = make_adjacency_matrix(N);
-disp("Generating adjacency matrix: finished");
+M = {R1};
 
-% Possible future optimization: Calculate the length of each step in a path as
-% the loop progresses so that  it doesn't have to recalculate the path for every node
+ls = [L_t(M{1})];
 
-ls = zeros(1, columns(adj_matrix));
+for p = [0:N]
+    row_length_cell = get_next_row(t, p, M);
+    filename_row = ["row_", num2str(p), ".txt"];
+    filename_lengths = ["lengths_row_", num2str(p), ".csv"];
 
-% For right now, I am only looking at the branch where the starting reflection is R1
+    M = row_length_cell{1};
+    new_ls = row_length_cell{2};
 
+    save("-text", filename_row, "M");
+    csvwrite(filename_lengths, new_ls);
+    ls = [ls, new_ls];
 
-disp("Converting paths to matrices");
-for i = [2:columns(adj_matrix)]
-	% P is the path from node 1 to node i
-	P = dijkstra_alg(adj_matrix, 1, i);
-	M = path_to_mat(adj_matrix, P, t);
-	ls(i) = L_t(M);
 endfor
-disp("Converting paths to matrices: finished")
-
-disp("Grouping lengths");
-groups = group_buckets(ls);
-disp("Grouping lengths: finshed")
-
-xs = groups(1,:);
-ys = groups(2,:);
-
-bar(xs, ys);

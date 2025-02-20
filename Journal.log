@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.25)  11 FEB 2025 09:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.25)  12 FEB 2025 08:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1111,12 +1111,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `Journal.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Journal.bbl' not found.
-
-No file Journal.bbl.
+Package biblatex Info: ... file 'Journal.bbl' found.
+ (./Journal.bbl)
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
 Package hyperref Info: Link coloring ON on input line 20.
+
 (./Journal.out) (./Journal.out)
 \@outlinefile=\write5
 \openout5 = `Journal.out'.
@@ -1185,34 +1185,29 @@ e
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fo
 nts/enc/dvips/cm-super/cm-super-t1.enc}]
-<Journal_Figures/g2_torus.jpg, id=135, 805.0075pt x 293.095pt>
+<Journal_Figures/g2_torus.jpg, id=183, 805.0075pt x 293.095pt>
 File: Journal_Figures/g2_torus.jpg Graphic file (type jpg)
 <use Journal_Figures/g2_torus.jpg>
-Package pdftex.def Info: Journal_Figures/g2_torus.jpg  used on input line 60.
+Package pdftex.def Info: Journal_Figures/g2_torus.jpg  used on input line 59.
 (pdftex.def)             Requested size: 234.8775pt x 85.51414pt.
 
-
-LaTeX Warning: Citation 'wolfram_prime_num_theorem' on page 2 undefined on inpu
-t line 104.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 
  []
 
 [2 <./Journal_Figures/g2_torus.jpg>] [3]
-<Journal_Figures/graph_weighting_cross_ratio.png, id=164, 188.20313pt x 134.094
+<Journal_Figures/graph_weighting_cross_ratio.png, id=217, 188.20313pt x 134.094
 73pt>
 File: Journal_Figures/graph_weighting_cross_ratio.png Graphic file (type png)
 <use Journal_Figures/graph_weighting_cross_ratio.png>
 Package pdftex.def Info: Journal_Figures/graph_weighting_cross_ratio.png  used 
-on input line 175.
+on input line 174.
 (pdftex.def)             Requested size: 352.31625pt x 251.04433pt.
  [4 <./Journal_Figures/graph_weighting_cross_ratio.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 251.
+nput line 250.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-51.
+50.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1222,13 +1217,18 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
  [5] [6])
 
 LaTeX Warning: Citation 'alexey_dijkstra_alg' on page 7 undefined on input line
- 253.
+ 252.
 
 (./Octave_Code/find_entropy.m) [7]
 
-LaTeX Warning: Empty bibliography on input line 261.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
 
-(./Journal.aux)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+[8] (./Journal.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1238,7 +1238,7 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Journal.out' has not changed.
-(rerunfilecheck)             Checksum: 1948D597F13E69B9FA0A23FF885FCD41;3531.
+(rerunfilecheck)             Checksum: 40C524D94502F1658E54112A9A52EF49;5599.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Journal
@@ -1249,11 +1249,11 @@ Package logreq Info: Writing requests to 'Journal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34560 strings out of 476076
- 628771 string characters out of 5793774
+ 34612 strings out of 476076
+ 629735 string characters out of 5793774
  2253187 words of memory out of 5000000
- 55880 multiletter control sequences out of 15000+600000
- 570053 words of font info for 67 fonts, out of 8000000 for 9000
+ 55916 multiletter control sequences out of 15000+600000
+ 570958 words of font info for 70 fonts, out of 8000000 for 9000
  175 hyphenation exceptions out of 8191
  89i,8n,90p,1132b,2660s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
@@ -1262,22 +1262,23 @@ ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/sy
-mbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf-dist
-/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfit1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-frm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sftt1000.pfb>
-Output written on Journal.pdf (7 pages, 492369 bytes).
+onts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfit1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfti0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pf
+b>
+Output written on Journal.pdf (8 pages, 508717 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 350 compressed objects within 4 object streams
- 141 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 279 words of extra memory for PDF output out of 10000 (max. 10000000)
 
