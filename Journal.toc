@@ -26,14 +26,14 @@
 \contentsline {section}{\tocsection {}{8}{January 24, 2025}}{5}{section.8}%
 \contentsline {subsection}{\tocsubsection {}{8.1}{Meeting Notes}}{5}{subsection.8.1}%
 \contentsline {subsection}{\tocsubsection {}{8.2}{Post-Meeting Notes}}{5}{subsection.8.2}%
-\contentsline {section}{\tocsection {}{9}{Program Explanation}}{5}{section.9}%
-\contentsline {section}{\tocsection {}{10}{Introduction}}{8}{section.10}%
-\contentsline {section}{\tocsection {}{11}{(Topology) Surfaces with punctures}}{8}{section.11}%
-\contentsline {section}{\tocsection {}{12}{(Geometry) $(G,X)$ structures and convex real projective structures}}{8}{section.12}%
-\contentsline {section}{\tocsection {}{13}{Hilbert length and topological entropy}}{8}{section.13}%
-\contentsline {section}{\tocsection {}{14}{The case of ideal pants groups}}{8}{section.14}%
-\contentsline {section}{\tocsection {}{15}{Manhattan curve}}{8}{section.15}%
-\contentsline {section}{\tocsection {}{16}{Results}}{8}{section.16}%
-\contentsline {subsection}{\tocsubsection {}{16.1}{Main idea of the code}}{8}{subsection.16.1}%
-\contentsline {section}{\tocsection {}{17}{Supporting materials: code}}{8}{section.17}%
+\contentsline {section}{\tocsection {}{9}{Program Explanation}}{6}{section.9}%
+\contentsline {section}{\tocsection {}{10}{Introduction}}{7}{section.10}%
+\contentsline {section}{\tocsection {}{11}{(Topology) Surfaces with punctures}}{7}{section.11}%
+\contentsline {section}{\tocsection {}{12}{(Geometry) $(G,X)$ structures and convex real projective structures}}{7}{section.12}%
+\contentsline {section}{\tocsection {}{13}{Hilbert length and topological entropy}}{7}{section.13}%
+\contentsline {section}{\tocsection {}{14}{The case of ideal pants groups}}{7}{section.14}%
+\contentsline {section}{\tocsection {}{15}{Manhattan curve}}{7}{section.15}%
+\contentsline {section}{\tocsection {}{16}{Results}}{7}{section.16}%
+\contentsline {subsection}{\tocsubsection {}{16.1}{Main idea of the code}}{7}{subsection.16.1}%
+\contentsline {section}{\tocsection {}{17}{Supporting materials: code}}{7}{section.17}%
 \contentsline {section}{\tocsection {}{}{References}}{8}{section*.7}%
