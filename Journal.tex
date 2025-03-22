@@ -27,7 +27,9 @@
 \tableofcontents
 
 \section{November 19, 2024}
+
 \subsection{Meeting notes}
+
 \subsubsection{Counting Problems}
 	Gauss estimated that the distribution of prime numbers was 
 	\begin{equation*}
@@ -74,7 +76,7 @@
 		\# \set{c \st l_p(c) < T} \sim \frac{e^T}{T}
 	\end{equation*}
 	\begin{remark}
-		This was shown by Huber Marpulis \William{Is this person the same as Grigory Margulis? Maybe I wrote the name down wrong when I was taking notes.}\GM{Huber proved it for hyperbolic surfaces. G. Margulis generalized it and his proof is more dynamical}
+		This was shown by Huber Margulis \William{Is this person the same as Grigory Margulis? Maybe I wrote the name down wrong when I was taking notes.}\GM{Huber proved it for hyperbolic surfaces. G. Margulis generalized it and his proof is more dynamical}
 	\end{remark}
 	
 	\subsubsection*{Origin of Program Matrices}
@@ -126,7 +128,7 @@ From what I understand of what Dr. Martone explained to me in one of our previou
 
 I am pretty sure that each word we create is representative of a sort of path formed by the reflections about each edge of these triangles. Many of these paths will end up leading to the same place though. \William{I will provide an illustration of my idea here later.} If we could find a more efficient way of tiling the space that minimizes the number of paths that lead to the same place in our tiling, then the computation would hopefully become a lot less resource intensive, which would make it more practical. 
 
-I suspect that this could be done by using some sort of graph to map out triangular grid that is formed by our tiling. We could hopefully calculate the size of our graph by finding the maximum \inquote{radius} that can be reached by words of length $n$, and then using some algorithm to find the shortest amount of reflections that would be required to reach that tile. This would probably be a good place to impliment something like Dijkstra's algorithm which finds the shortest path between nodes in a graph. All of this should be able to be done much more efficiently that just brute forcing thousands of matrix multitplications and then sorting out the duplicates. 
+I suspect that this could be done by using some sort of graph to map out triangular grid that is formed by our tiling. We could hopefully calculate the size of our graph by finding the maximum \inquote{radius} that can be reached by words of length $n$, and then using some algorithm to find the shortest amount of reflections that would be required to reach that tile. This would probably be a good place to implement something like Dijkstra's algorithm which finds the shortest path between nodes in a graph. All of this should be able to be done much more efficiently that just brute forcing thousands of matrix multiplications and then sorting out the duplicates. 
 
 \textbf{TODO List:}
 \begin{todolist}
@@ -257,6 +259,12 @@ I then use Dijkstra's algorithm to find the the path between the root node and a
 \section{Introduction}
 % Short overviewing of what we are trying to achieve. Don't spend too much time on this.
 \section{(Topology) Surfaces with punctures}
+
+A $2$-manifold is a topological space that is second countable, Hausdorff, and locally Euclidean of dimension $2$.\William{Will I need to have a definition sections somewhere in the paper? I see that the example thesis from Dr. Martin.}
+
+An example of such a $2$-manifold (which will be discussed throughout this work) is the real projective plane, denoted $\RP^2$./
+
+
 \begin{itemize}
     \item What's a 2-dimensional manifold.
     \item Examples: $\mathbb{RP}^2$, affine chart 
@@ -280,6 +288,6 @@ Examples: Triangle reflections groups that give you a map from the fundamental g
 \section{Supporting materials: code}
 
 \newpage
-\printbibliography
+%\printbibliography
 
 \end{document}
