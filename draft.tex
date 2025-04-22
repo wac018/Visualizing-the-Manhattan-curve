@@ -1,0 +1,189 @@
+\documentclass{amsart}
+
+% I  moved all the document specific preamble stuff here so the top of this document doesn't get messy
+\input{journal_preamble.tex} 
+
+% Resource Locations
+\graphicspath{{Journal_Figures}}
+\addbibresource{Journal.bib}
+
+
+\def\WC #1{\footnote{\color{blue} W: #1}}
+\def\GM #1{\footnote{\color{magenta} G: #1}}
+\def\inn #1{\langle #1\rangle}
+
+\title{Visualizing the Manhattan curve --- Draft}
+\author{William Clampitt and Giuseppe Martone}
+\date{November 2024}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\hl{I made the margins of the paper wider so that it would be easier to read the todo notes on the side.}
+	\section{Introduction}
+	% Short overviewing of what we are trying to achieve. Don't spend too much time on this.
+	\section{(Topology) Surfaces with punctures}
+	
+	A $d$-manifold is a topological space that is second countable, Hausdorff, and locally Euclidean of dimension $2$. First, let us recall the definitions a topological space $X$ is a set paired with a collection $\T$ of open subsets of $X$ (where $\T$ is closed under finite intersections and arbitrary unions). 
+	\todo[inline]{Quickly recall topological space, second countable and Hausdorff (without definition environment)}
+	\todo[inline]{In definition environment, define locally Euclidean of dimension $d$}
+	\todo[inline]{Example, the sphere is locally Euclidean of dimension 2}
+	\todo[inline]{In definition environment, define surfaces}
+	\todo[inline]{In an example environment, talk about $S_{0,3}$}
+	\todo[inline]{In an example environment, discuss $\mathbb {RP}^2$. }
+	
+	\begin{tcolorbox}
+		\begin{itemize}
+			%\item Definition is the space of line passing through the origin in $\mathbb R^3$.
+			%\item It will be convenient for us to describe $\mathbb {RP}^2$ as a disjoint union of an affine patch and the projection of a plane passing through the origin.
+			%\item A {\em plane} in $\mathbb R^3$ is a 2-dimensional vector subspace of $\mathbb R^3$. An {\em affine plane} $A$ is a translate of a plane $P$ by a non-zero vector $v$ not in $P$. Add the description as an affine plane as a set
+			%\[
+			%A=\{x\in\mathbb R^3\mid x=v+w, \text{ for some }w\in P\}
+			%\]
+			\item Define what $\mathbb P(P)$ is (or $\pi(P)$).
+			\item Let $P$ be a plane, and let $A$ be an affine plane which a translate of $P$ by a non-zero vector $v$ not in $P$. Then, in a Lemma environment, $\mathbb {RP}^2\cong A\sqcup \mathbb{P}(P)$.
+			\item Add a short proof of Lemma.
+		\end{itemize}
+	\end{tcolorbox}
+
+	An example of such a $2$-manifold (which will be discussed throughout this work) is the space of lines passing though the origin in $\R^3$. This space is called the real projective plane and is denoted $\RP^2$.
+	
+	It is often convenient to think of $\RP^2$ as the disjoint union of a plane $P$ passing though the origin in $\R^3$ and an affine plane.
+	
+	\begin{definition}
+		\label{def:plane-affine}
+		A \emph{plane} in $\R^3$ is a $2$-dimensional vector subspace of $\R^3$. An \emph{affine plane} $A$ is a translate of a plane $P$ by a nonzero vector $v$ not in $P$. 
+		
+		\begin{equation*}
+			A = \set{x \in \R^3 \colon x = v + w \text{ for some } w \in P}.
+		\end{equation*}
+	\end{definition}
+	
+	\todo[inline]{I am not sure how to define a projection.}
+	
+	\begin{lemma}
+		Let $P$ be a plane, and let $A$ be an affine plane which is a translate of $P$ by a nonzero vector $v$ not in $P$. Then,
+		
+		\begin{equation*}
+			\RP^2 \cong A \sqcup \proj{P}.
+		\end{equation*}
+	\end{lemma}
+	
+	\begin{proof}
+		
+	\end{proof}
+	
+	\subsection{Orientable Surfaces}
+	
+	In topology, surfaces can be classified into two categories: orientable and non-orientable.\todo[inline]{Giuseppe: find easiest definition of orientable} The idea behind this classification is the idea that if you were to place an object with a certain chirality on the surface, then every continuous loop that object takes around the surface will result in the object returning to its original position with the same chirality that it started with. If this can be done, the surface is classified as orientable. If there is a continuous loop that this object can take that results in the object returning to its original position, but is now the mirror image of how it started, then the surface is classified as non-orientable. 
+	
+	\subsection{Fundamental Group $S_{0,3}$}
+	
+	\William{I think we talked about maybe restricting the broadness of our definitions here to specifically focus on the traits that are relevant to our discussion of $S_{0,3}$.}
+	
+	\todo[inline]{General idea of fundamental group and then specialize to $S_{0,3}$.}
+	\begin{tcolorbox}
+		\begin{itemize}
+			\item Let $X$ be a topological space, and $p\in X$. Then, the fundamental group of $X$ based at $p$ is\dots.
+			\item Specialize to $S_{0,3}$
+			\item Since $S_{0,3}$ is path-connected, for any $p,q\in S_{0,3}$, there is an isomorphism of groups between the fundamental groups based at $p$ and $q$. Quick reminder: how. Therefore, we can just talk about the fundamental group of $S_{0,3}$ without specifying the base point.
+			\item Lemma: The fundamental group of $S_{0,3}$ is the free group on two generators.
+			\item Proof: Seifert-Van Kampen.
+		\end{itemize}
+	\end{tcolorbox}
+	
+	In a path connected topological space, a \emph{loop} is a continuous path inside the topological space where the starting point and the ending point are the same. There are potentially infinitely many loops that start and end at a point $p$ in the topological space, but we can partition the set of loops based at $p$ by grouping together the loops that are homotopy equivalent. We can operate on these equivalence classes of loops by concatenation. Essentially, you can \inquotes{glue} the end of the first loop to the start of the second loop. This set of equivalence classes paired with the concatenation operation forms a group with the identity being the \inquotes{constant} loop (i.e. the loop that never leaves the starting point). 
+	
+	Notice that this group of loops depends on the base point $p$, but as it turns out, if you have two points $p$ and $q$ in a path connected topological space $X$, then the groups consisting of the homotopy equivalent loops starting at $p$ and the homotopy equivalent loops starting at $q$ are isomorphic to each other. In other words, the choice of base point isn't really important.
+	
+	
+	\begin{itemize}
+		\item What's a 2-dimensional manifold.
+		\item Examples: $\mathbb{RP}^2$, affine chart 
+		\item Classification of orientable surfaces.
+		\item Fundamental group of $S_{0,3}$.
+	\end{itemize}
+	
+	\section{The hyperbolic structure on $S_{0,3}$}
+	
+	\begin{itemize}
+		\item This thesis is motivated by the study of geometric structures on surfaces. In this section we discuss the classical example of hyperbolic structures.
+		\item Define $\Hyp^2$ and its metric (using definition environments)
+		\item Define $\mathsf{PSL}_2(\mathbb R)$ as the group as a group of matrices.
+		\item Show that an element of $\mathsf{PSL}_2(\mathbb R)$ defines an isometry via Mobius transformations. 
+		\item Define hyperbolic structure =$(\mathsf{PSL}_2(\mathbb R),\Hyp^2)$-structure on a surface $S$.
+		\item Theorem: whenever the Euler characteristic of $S$ is negative, then it admits at least one hyperbolic structure.
+		\item Recall: $\chi(S)=2-2g-n$ where $g$ is the genus and $n$ is the number of punctures.
+		\item Example: Explain on Friday.
+	\end{itemize}
+	
+	\section{(Geometry) $(G,X)$ structures and convex real projective structures}
+	
+	\todo{I don't really like how this section is worded, but edits can be made later}
+	Let $X$ be a $n$-manifold that is equipped with a metric $\metricd$. Since $X$ is a manifold, we know that it is locally Euclidean. This can be thought of as picking any point in our manifold and, if we examine a very local patch around that point, this patch should resemble $\R^n$. We can express idea more explicitly by specifying an atlas $\set{(\mathcal{U}_\alpha, \varphi_\alpha)}_{\alpha \in A}$ where $\mathcal{U}_\alpha$ is one of these local patches (or neighborhoods) in $X$ and $\varphi_\alpha$ is the homeomorphism that maps $\mathcal{U}_\alpha$ to a set $\mathcal{V}_\alpha$ in $R^n$. We will let $G$ be be the set of isometries on $X$. Then, if $\alpha, \beta \in A$, where $A$ is the index set of our atlas, then we have the homeomorphisms
+	\begin{equation*}
+		\begin{split}
+			\varphi_\alpha &\colon \mathcal{U}_\alpha \to \mathcal{V}_\alpha \\
+			\varphi_\beta &\colon \mathcal{U}_\beta \to \mathcal{V}_\beta.
+		\end{split}
+	\end{equation*}
+	
+	We can then create a map $\varphi_\beta \circ \varphi_\alpha^{-1} \colon \mathcal{V}_\alpha \to \mathcal{V}_\beta$. If we restrict this map to $G$, then this structure allows us to determine geometric relationships between different areas of our manifold.
+	
+	One example of a $(G,X)$ structure is $(\mathsf{SL}_3(\R), \RP^2)$. $\mathsf{SL}_3(\R)$ is the set of $3\times3$ matrices with real entries and whose determinant is $1$. Geometrically, $\mathsf{SL}_3(\R)$ can be thought of as the group of linear transformations that preserve volume and orientation of vectors in $\RP^2$. In other words, $\mathsf{SL}_3(\R)$ is a group of isometries on $\RP^2$.
+	
+	
+	\begin{itemize}
+		\item What is a $(G,X)$ structure?
+		\item The example of $(\mathsf{SL}_3(\mathbb R),\mathbb{RP}^2)$-structures
+		\item Properly convex domains
+	\end{itemize}
+	
+	If we consider an open set $\Omega \subseteq \RP^2$, $\Omega$ is \emph{proper} if there exists a plane $P \subseteq \R^3$ passing thorugh the origin such that $\close{\Omega} \cap \pi(P) = \varnothing$. In other words, the closure of $\Omega$, $\close{\Omega}$ is entirely contained in the affine chart $A$.
+	
+	A proper set $\Omega \subseteq \RP^2$ is \emph{convex} if for any two points $x,y \in \Omega$, the line $l_{xy}$ passing through $x$ and $y$ intersects $\Omega$ is a connected segment.
+	
+	\todo[inline]{Finish adding strictly convex, etc. Example: Klein-Beltrami model of $\Hyp^2$.
+		
+		The example of hyperbolic structure on $S_{0,3}$ can be seen as a convex real projective structure using the matrices $R_{1,1}$, $R_{2,1}$ and $R_{3,1}$.}
+	
+	\section{Hilbert length and topological entropy}
+	
+	\subsection{Hilbert Length in $\Hyp^2$}
+	
+	In a geometric structure, we will need a way of measuring distance. However, since there are many different paths that could be taken from one point to another, it is useful to have a concept of a \inquotes{shortest} path. We will call the shortest path between any two points a \emph{geodesic}. For example, in a Euclidean space, the geodesic between any two points is a straight line. 
+	
+	Since we are not working in Euclidean space though, we will need a different way of measuring geodesics. In the standard model of a $2$-dimensional hyperbolic space, $\Hyp^2$, the \inquotes{hyperbolic length} is measured by taking a path between two points, represented by the parametric expression $\gamma(t) = (x(t), y(t))$ where $t \in [0,1]$. The length of this path is measured using
+	\begin{equation*}
+		l(\gamma) = \int_{0}^{1} \frac{\sqrt{\dot{x}(t)^2 + \dot{y}(t)^2}}{y(t)} \der t
+	\end{equation*}
+	
+	From this, the geodesic, also known as the Hilbert length in $\Hyp^2$, is given by
+	\begin{equation*}
+		d_{\Hyp^2}(z,w) = \inf \set{l(\gamma) \colon \gamma \text{ is a path from } z \text{ to } w}.
+	\end{equation*}
+	
+	Geometrically, this shortest curve is represented as the arc length between two points $z,q \in \Hyp^2$ created by a semi-circle who's endpoints are perpendicular with the $x$ axis. \todo{if this ends up staying, we can add a picture}.
+	
+	\subsection{Hilbert Length in $\RP^2$}
+	
+	If we have a strictly convex set $\Omega$ in $\RP^2$, we can construct a similar notion of a geodesic by drawing a line through any two points $x,y \in \Omega$ and label the places where the line intersects the boundary of $\Omega$ $a$ and $b$, respectively. The cross ratio $\crossratio{a,x,y,b} \geq 1$ and or geodesic is given by
+	\begin{equation*}
+		\metricd(x,y) = \frac{1}{2} \log \crossratio{a,x,y,b}.
+	\end{equation*}
+	
+	As it turns out, there is exists an isometry between $\Hyp^2$ with the Hilbert length and $(\RP^2, \metricd)$, so it makes sense to also refer to $\metricd$ as the Hilbert length in $\RP^2$. \todo{I think this is correct, but it sounds a bit weird regardless, in my opinion}\todo[inline]{The isometry is between $\Hyp^2$ and a circle or an ellipse in $\mathbb{RP}^2$ with its Hilbert metric.}
+	
+	% This is where we talk about singular values that we use in our length formula
+	\section{The case of ideal pants groups}
+	Examples: Triangle reflections groups that give you a map from the fundamental group of $S_{0,3}$ to the space of convex real projective structures.
+	
+	\section{Manhattan curve}
+	\section{Results}
+	\subsection{Main idea of the code}
+	\section{Supporting materials: code}
+	
+	\newpage
+	%\printbibliography
+\end{document}

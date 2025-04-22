@@ -16,13 +16,29 @@ urlcolor=cyan]{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{tikz}
 \usepackage{listings} % Used for inserting code snippets
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{todonotes}
+\usepackage{tcolorbox} % used for drawing boxes around paragraphs so that notes are easier to identify
 
 \usepackage{enumitem}
 \usepackage{listings} % Used for including code snippets
 
-\geometry{letterpaper, portrait, margin=1in}
+\geometry{letterpaper, portrait, margin=2in}%1in}
 
 \graphicspath{{Journal_Figures}}
+
+\definecolor{myorange}{HTML}{ff7f00} % Defines the color of the box around text for tcolorbox
+
+%https://osl.ugr.es/CTAN/macros/latex/contrib/tcolorbox/tcolorbox.pdf
+\tcbuselibrary{breakable}
+\tcbset{%any default parameters
+	width=0.7\textwidth,
+	halign=justify,
+	center,
+	breakable,
+	colback=myorange    
+}
 
 % This controls how the code snippets are typset
 \lstset{
@@ -35,10 +51,15 @@ urlcolor=cyan]{hyperref}
 
 \lstset{language=Octave}
 
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}
+\newtheorem{definition}{Definition}[section]
 \newtheorem*{example*}{Example}
 \newtheorem{example}{Example}
+
 
 \theoremstyle{remark}
 \newtheorem{remark}{Remark}
@@ -58,16 +79,27 @@ urlcolor=cyan]{hyperref}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\RP}{\mathbb{RP}}
+\newcommand{\Hyp}{\mathbb{H}}
+\newcommand{\T}{\mathcal{T}}
+
+\newcommand{\der}{\mathsf{d}}
+\newcommand{\crossratio}[1]{\operatorname{CR}\left[#1\right]}
+
+\newcommand{\metricd}{\operatorname{d}}
 
 % Makes a todo list environment to make nice todo lists for things that would need to be shown
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 
-\newcommand{\inquote}[1]{``#1''}
+\newcommand{\inquotes}[1]{``#1''}
+
+\newcommand{\close}[1]{\overline{#1}}
 
 \newcommand{\wrt}{\text{w.r.t. }}
+\newcommand{\proj}[1]{\pi\left(#1\right)}
 
 \frenchspacing
+%\doublespacing
 
 \newenvironment{summary}{
 	\hfill \break 
