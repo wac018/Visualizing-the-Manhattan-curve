@@ -1,4 +1,4 @@
-t = 2;
+t = 1;
 N = 20;
 
 R1 = [[-1, 0, 0]; [2*t, 1, 0]; [2/t, 0, 1]];
@@ -6,7 +6,7 @@ R1 = [[-1, 0, 0]; [2*t, 1, 0]; [2/t, 0, 1]];
 M = {R1};
 
 ls = [L_t(M{1})];
-
+tic();
 for p = [0:N]
     row_length_cell = get_next_row(t, p, M);
     filename_row = ["row_t_", num2str(p),"_", num2str(p), ".txt"];
@@ -20,4 +20,6 @@ for p = [0:N]
     ls = [ls, new_ls];
     disp(["finished row: ", num2str(p)]);
 endfor
+elapsed_time = toc();
+disp(["elapsed time: ", num2str(1000*elapsed_time),"ms"]);
 
