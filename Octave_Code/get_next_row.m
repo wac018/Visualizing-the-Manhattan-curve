@@ -1,5 +1,6 @@
 function output_cell = get_next_row(t, p, M)
 
+<<<<<<< HEAD
 	R1 = [[-1, 0, 0];
           [2*t, 1, 0];
           [2/t, 0, 1]];
@@ -11,6 +12,11 @@ function output_cell = get_next_row(t, p, M)
 	R3 = [[1, 0, 2*t];
           [0, 1, 2/t];
           [0, 0, -1]];
+=======
+	R1 = [[-1, 0, 0]; [2*t, 1, 0]; [2/t, 0, 1]];
+	R2 = [[1, 2/t, 0]; [0, -1, 0]; [0, 2*t, 1]];
+	R3 = [[1, 0, 2*t]; [0, 1, 2/t]; [0, 0, -1]];
+>>>>>>> dcbfc020e8bdd06bcbada47b4af2943401321162
 
 
 	next_row = cell(1, 2*length(M));
