@@ -313,5 +313,4 @@ TSWLatexianTemp*
 *.txt
 
 # Octave workspace
-*/octave-workspace
-./octave-workspace/
+Octave_Code/octave-workspace
