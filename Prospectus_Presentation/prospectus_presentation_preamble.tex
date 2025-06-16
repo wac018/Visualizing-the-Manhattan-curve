@@ -1,0 +1,184 @@
+\usepackage{amsmath, amsthm, amssymb, mathtools}
+\usepackage{xcolor, soul}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[sortcites=true, sorting=nyt, backend=biber]{biblatex}
+\usepackage{tikz, tikz-3dplot}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{comment}
+%\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{todonotes}
+%\usepackage{subcaption}
+%\usepackage{pst-solides3d}
+
+%\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{colormaps}
+\pgfplotsset{
+	compat=1.18,
+	colormap={mycolormap}{color=(lightgray) color=(white) color=(lightgray)}
+}
+
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing,shapes.misc}
+\usetikzlibrary{intersections}
+\usepgfplotslibrary{fillbetween}
+
+\graphicspath{{Images/}}
+
+% --- Beamer Specific Stuff ---
+\beamertemplatenavigationsymbolsempty
+
+% Adds slide numbers to slides
+\part{title}\setbeamertemplate{footline}[frame number]
+
+%\usetheme{CambridgeUS}
+%\setbeamertemplate{headline}{}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+			\usebeamerfont{title}{\insertsectionhead}\par%
+		\end{beamercolorbox}
+		\vfill
+	\end{frame}
+}
+
+
+%\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+% --- End of Beamer Specific Stuff ---
+
+\renewcommand{\emph}{\textbf}
+
+
+\definecolor{myorange}{HTML}{ff7f00} % Defines the color of the box around text for tcolorbox
+\definecolor{myblue}{HTML}{46b8ff} % Defines a blue color for notes that I make
+\definecolor{darkgreen}{HTML}{008000} % Defines a dark green for lines
+
+\newcommand{\mytodo}[2][]{\todo[color=myblue,#1]{#2}} % Makes a custom todo box for notes that I make vs notes Giuseppe makes.
+
+%https://osl.ugr.es/CTAN/macros/latex/contrib/tcolorbox/tcolorbox.pdf
+\tcbuselibrary{breakable}
+\tcbset{%any default parameters
+	width=0.7\textwidth,
+	halign=justify,
+	center,
+	breakable,
+	colback=myorange    
+}
+
+% This controls how the code snippets are typset
+\lstset{
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}}\space
+}
+
+\lstset{language=Octave}
+
+% Used to make the bar to make the notation for a restricted domain look nicer
+\newcommand{\littletaller}{\mathchoice{\vphantom{\big|}}{}{}{}}
+
+% Makes a command to automatically created the notation for a restricted domain
+\newcommand\restrict[2]{
+	{% we make the whole thing an ordinary symbol
+		\left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+		#1 % the function
+		\littletaller % pretend it's a little taller at normal size
+		\right|_{#2} % this is the delimiter
+	}
+}
+
+
+% Some nice math macros
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand*\diff{\mathop{}\!\mathrm{d}} % Changes the font of the differential d when writing dx or similar
+\renewcommand{\st}{\colon} % renews the st command that is usually provided by soul to strike through
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\RP}{\mathbb{RP}}
+\newcommand{\Hyp}{\mathbb{H}}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\PSL}[2]{\mathsf{PSL}_{#1}\left(#2\right)}
+\newcommand{\SL}[2]{\mathsf{SL}_{#1}\left(#2\right)}
+
+\newcommand{\derof}[1]{\dot{#1}}
+\newcommand{\der}{\mathsf{d}}
+\newcommand{\crossratio}[1]{\operatorname{CR}\left[#1\right]}
+
+\newcommand{\metricd}{\operatorname{d}}
+\newcommand{\CR}[1]{\operatorname{CR}\left[#1\right]}
+\newcommand{\bound}[1]{\partial #1}
+\newcommand{\close}[1]{\overline{#1}}
+\newcommand{\norm}[1]{\|#1\|}
+
+\newcommand{\wrt}{\text{w.r.t. }}
+\newcommand{\projof}[1]{\pi\left(#1\right)}
+\newcommand{\proj}{\pi}
+\newcommand{\abs}[1]{\left| #1 \right|}
+
+% -- Tikz Pictures --
+
+\tikzset{
+	pics/torus/.style n args={3}{
+		code = {
+			\providecolor{pgffillcolor}{rgb}{1,1,1}
+			\begin{scope}[
+				yscale=cos(#3),
+				outer torus/.style = {draw,line width/.expanded={\the\dimexpr2\pgflinewidth+#2*2},line join=round},
+				inner torus/.style = {draw=pgffillcolor,line width={#2*2}}
+				]
+				\draw[outer torus] circle(#1);\draw[inner torus] circle(#1);
+				\draw[outer torus] (180:#1) arc (180:360:#1);\draw[inner torus,line cap=round] (180:#1) arc (180:360:#1);
+			\end{scope}
+		}
+	}
+}
+
+% -- End of Tikz Pictures --
+
+% -- Tikz Styles --
+
+\tikzset{%
+	add/.style args={#1 and #2}{
+		to path={%
+			($(\tikztostart)!-#1!(\tikztotarget)$)--($(\tikztotarget)!-#2!(\tikztostart)$)%
+			\tikztonodes},add/.default={.2 and .2}}
+} 
+% -- End of Tikz Styles --
+
+% -- Tikz Functions --
+
+\makeatletter
+\newdimen\@XCoord
+\newdimen\@YCoord
+\newdimen\XCoord
+\newdimen\YCoord
+\newcommand*{\ExtractCoordinate}[1]{%
+	\getscale{\@scalefactor}
+	\path [transform canvas] (#1); \pgfgetlastxy{\@XCoord}{\@YCoord}
+	\pgfmathsetlength{\XCoord}{\@XCoord/\@scalefactor}
+	\pgfmathsetlength{\YCoord}{\@YCoord/\@scalefactor}
+}
+\newcommand*{\ExtractCoordinateOld}[1]{%
+	\path [transform canvas] (#1); \pgfgetlastxy{\XCoord}{\YCoord}%
+}%
+%\let\ExtractCoordinate\ExtractCoordinateOld
+\makeatother
+
+\newdimen\McurveXcoord
+\newdimen\McurveYcoord
+% -- End of Tikz Functions --

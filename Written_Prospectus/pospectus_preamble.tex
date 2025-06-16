@@ -1,0 +1,213 @@
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[sortcites=true, sorting=nyt, backend=biber]{biblatex}
+\usepackage[colorlinks=true,
+pdfstartview=FitV, linkcolor=blue, citecolor=olive,
+urlcolor=cyan]{hyperref}
+\usepackage{xcolor, soul} %Package to insert links, citations, etc.
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{amsmath, amsthm, amssymb, mathtools}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{changepage}
+\usepackage[T1]{fontenc}
+\usepackage{tikz, pgfplots, tikz-3dplot}
+\usepackage{listings} % Used for inserting code snippets
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{todonotes}
+\usepackage{tcolorbox} % used for drawing boxes around paragraphs so that notes are easier to identify
+
+\usepackage{enumitem}
+\usepackage{listings} % Used for including code snippets
+\usepackage{subcaption}
+
+\geometry{letterpaper, portrait, margin=2in}%1in}
+
+\graphicspath{{Images/}}
+
+\usetikzlibrary{external}
+\tikzexternalize[prefix=tikz/]
+
+% This makes todonotes work with tikz external
+\makeatletter
+\renewcommand{\todo}[2][]{\tikzexternaldisable\@todo[#1]{#2}\tikzexternalenable}
+\makeatother
+
+
+
+\definecolor{myorange}{HTML}{ff7f00} % Defines the color of the box around text for tcolorbox
+\definecolor{myblue}{HTML}{46b8ff} % Defines a blue color for notes that I make
+\definecolor{darkgreen}{HTML}{008000} % Defines a dark green for lines
+
+\newcommand{\mytodo}[2][]{\todo[color=myblue, #1]{#2}} % Makes a custom todo box for notes that I make vs notes Giuseppe makes.
+
+%https://osl.ugr.es/CTAN/macros/latex/contrib/tcolorbox/tcolorbox.pdf
+\tcbuselibrary{breakable}
+\tcbset{%any default parameters
+	width=0.7\textwidth,
+	halign=justify,
+	center,
+	breakable,
+	colback=myorange    
+}
+
+% This controls how the code snippets are typset
+\lstset{
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}}\space
+}
+
+\lstset{language=Octave}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{example*}{Example}
+\newtheorem{example}{Example}[section]
+
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newlist{eqlist}{enumerate}{2}
+\setlist[eqlist]{label=(\roman*), before=\raggedright}
+
+% Nice way to make notes for myself
+\newcommand{\William}[1]{\textcolor{red}{[William] #1}}
+
+% Some nice math macros
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand*\diff{\mathop{}\!\mathrm{d}} % Changes the font of the differential d when writing dx or similar
+\renewcommand{\st}{\colon} % renews the st command that is usually provided by soul to strike through
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\RP}{\mathbb{RP}}
+\newcommand{\Hyp}{\mathbb{H}}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\PSL}[2]{\mathsf{PSL}_{#1}\left(#2\right)}
+\newcommand{\SL}[2]{\mathsf{SL}_{#1}\left(#2\right)}
+
+\newcommand{\derof}[1]{\dot{#1}}
+\newcommand{\der}{\mathsf{d}}
+\newcommand{\crossratio}[1]{\operatorname{CR}\left[#1\right]}
+
+\newcommand{\metricd}{\operatorname{d}}
+\newcommand{\CR}[1]{\operatorname{CR}\left[#1\right]}
+\newcommand{\bound}[1]{\partial #1}
+\newcommand{\hvec}[2]{\begin{bmatrix} #1 \\ #2 \end{bmatrix}}
+
+% Makes a todo list environment to make nice todo lists for things that would need to be shown
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\newcommand{\inquotes}[1]{``#1''}
+
+\newcommand{\close}[1]{\overline{#1}}
+
+\newcommand{\wrt}{\text{w.r.t. }}
+\newcommand{\projof}[1]{\pi\left(#1\right)}
+\newcommand{\proj}{\pi}
+
+% Used to make the bar to make the notation for a restricted domain look nicer
+\newcommand{\littletaller}{\mathchoice{\vphantom{\big|}}{}{}{}}
+
+% Makes a command to automatically created the notation for a restricted domain
+\newcommand\restrict[2]{
+	{% we make the whole thing an ordinary symbol
+		\left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+		#1 % the function
+		\littletaller % pretend it's a little taller at normal size
+		\right|_{#2} % this is the delimiter
+	}
+}
+
+%\frenchspacing
+%\doublespacing
+
+\newenvironment{summary}{
+	\hfill \break 
+	\begin{center}
+		\textbf{Summary:}
+	\end{center}
+	\begin{adjustwidth}{0.5in}{0.5in}
+		
+	
+}{
+\end{adjustwidth}
+\bigskip
+}
+
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing,shapes.misc}
+\usetikzlibrary{intersections}
+\usepgfplotslibrary{fillbetween}
+\usepgfplotslibrary{colormaps}
+
+\pgfplotsset{
+	compat=1.18,
+	colormap={mycolormap}{color=(lightgray) color=(white) color=(lightgray)}
+}
+
+\tikzset{
+	convexset/.style = {line width = 0.75 pt, fill = white},
+	ext/.style = {circle, inner sep=0pt, minimum size=2pt, fill=black},
+	segment/.style = {line width = 0.75 pt}
+}
+
+
+% -- Tikz Pictures --
+
+\tikzset{
+	pics/torus/.style n args={3}{
+		code = {
+			\providecolor{pgffillcolor}{rgb}{1,1,1}
+			\begin{scope}[
+				yscale=cos(#3),
+				outer torus/.style = {draw,line width/.expanded={\the\dimexpr2\pgflinewidth+#2*2},line join=round},
+				inner torus/.style = {draw=pgffillcolor,line width={#2*2}}
+				]
+				\draw[outer torus] circle(#1);\draw[inner torus] circle(#1);
+				\draw[outer torus] (180:#1) arc (180:360:#1);\draw[inner torus,line cap=round] (180:#1) arc (180:360:#1);
+			\end{scope}
+		}
+	}
+}
+
+% --- End of Tikz Pictures ---
+
+
+% -- Tikz Functions --
+
+\tikzset{%
+	add/.style args={#1 and #2}{
+		to path={%
+			($(\tikztostart)!-#1!(\tikztotarget)$)--($(\tikztotarget)!-#2!(\tikztostart)$)%
+			\tikztonodes},add/.default={.2 and .2}}
+} 
+
+% https://tex.stackexchange.com/questions/86897/recover-scaling-factor-in-tikz
+\newcommand*\getscale[1]{%
+	\begingroup
+	\pgfgettransformentries{\scaleA}{\scaleB}{\scaleC}{\scaleD}{\whatevs}{\whatevs}%
+	\pgfmathsetmacro{#1}{sqrt(abs(\scaleA*\scaleD-\scaleB*\scaleC))}%
+	\expandafter
+	\endgroup
+	\expandafter\def\expandafter#1\expandafter{#1}%
+}
+
+
+% -- End of Tikz Functions --
